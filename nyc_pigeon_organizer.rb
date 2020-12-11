@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
           newdata[name][at[0]].push(sp[0].to_s)
         end
       end
-      binding.pry
+      #binding.pry
     end
   end
   #binding.pry
