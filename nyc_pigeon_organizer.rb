@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
     data.each do |at|
       at[1].each do |sp|
         if sp[1].include?(name)
-          newdata[name][at[0]].push(sp[0])
+          newdata[name][at[0]].push(sp[0].to_s)
         end
       end
       binding.pry
