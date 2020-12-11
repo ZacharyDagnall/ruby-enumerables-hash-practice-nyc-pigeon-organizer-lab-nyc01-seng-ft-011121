@@ -31,5 +31,6 @@ def nyc_pigeon_organizer(data)
   newdata
 end
 
+#i don't think i have the optimal or most line-efficient solution but i think it is very clear and straightforward
 
 
