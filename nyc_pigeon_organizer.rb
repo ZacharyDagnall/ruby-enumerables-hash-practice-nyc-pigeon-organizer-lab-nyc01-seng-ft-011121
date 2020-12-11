@@ -17,19 +17,16 @@ def nyc_pigeon_organizer(data)
     newdata[name] = {color: [], gender: [], lives: []}
   end
   
-  #fill in colors 
+  #fill in attributes per name  
   names.each do |name|
-    data.each do |at|
-      at[1].each do |sp|
-        if sp[1].include?(name)
-          newdata[name][at[0]].push(sp[0].to_s)
+    data.each do |att|
+      att[1].each do |spec|
+        if spec[1].include?(name)
+          newdata[name][att[0]].push(spec[0].to_s)
         end
       end
-      #binding.pry
     end
   end
-  #binding.pry
- 
   
   newdata
 end
